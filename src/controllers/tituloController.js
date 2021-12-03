@@ -59,7 +59,7 @@ const ProcurarId = async (req, res) => {
   const id = req.params.id
   Titulo.findById(id)
     .then((titulo) => {
-      res.status(200).json(estudio);
+      res.status(200).json(titulo);
   })
   .catch(err => next(err));
 }
