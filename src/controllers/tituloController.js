@@ -1,10 +1,6 @@
 const mongoose = require('mongoose')
 const Titulo = require('../models/titulo')
 
-const getOneTitulo= async (req, res) => {
-
-}
-
 const getAll = async (req, res) => {
   const titulos = await Titulo.find().populate('estudio')
   res.status(200).json(titulos)
