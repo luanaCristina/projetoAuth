@@ -19,4 +19,4 @@ app.use('/titulos', titulosRouter)
 const usuariasRouter = require('./src/routes/usuarias.routes')
 app.use('/usuarias', usuariasRouter)
 
-app.listen(3333, () => console.log('listening on port 3333'))
+app.listen(process.env.PORT, () => console.log('listening on port 3333'))
