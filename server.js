@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-require('dotenv-safe').config({silent: true})
+require('dotenv').config({silent: true})
 
 //TODO:
 //conectar o db
