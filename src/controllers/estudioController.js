@@ -47,7 +47,7 @@ const createStudio = async (req, res) => {
 const updateOneEstudio = async (req, res) => {
 
   const id = req.body._id
-  const name = req.body.nome
+  const nome = req.body.nome
 
   Estudio.updateOne({ _id: id }, {
     $set: {
